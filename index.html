@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
     <link rel="stylesheet" href="app.css">
-    <script src="app.js"></script>
 </head>
 <body>
     <div class="container">
         <img src="https://w7.pngwing.com/pngs/723/606/png-transparent-ping-pong-paddles-sets-pingpongbal-pingpong-sport-table-tennis-racket-table-tennis-is-fun-thumbnail.png" alt="">
         <h3>Ping Pong Score Keeper</h3>
         <div>
-            <h1>0 to 0</h1>
+            <h1><span id="s1">0</span> to <span id="s2">0</span></h1>
             <p>Use the buttons below to keep score</p><br>
             <b>Playing To</b>
             <select id="total" name="total">
@@ -30,11 +29,12 @@
             </select>
         </div>
         <div>
-            <button id="p1" name="p1" onclick="score(this.id)">+1 PlayerOne</button>
-            <button id="p2" name="p2" onclick="score(this.id)">+1 PlayerTwo</button>
-            <inpu
+            <button id="p1" name="p1">+1 PlayerOne</button>
+            <button id="p2" name="p2">+1 PlayerTwo</button>
+            <button id="reset" name="reset">Reset</button>
         </div>
     </div>
+    <script src="app.js"></script>
     
 </body>
 </html>
